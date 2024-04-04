@@ -7,7 +7,7 @@ class FIFOCache(BaseCaching):
     """Fifo class"""
 
     def __init__(self):
-        """doc doc doc"""
+        """init method"""
         super().__init__()
 
     def put(self, key, item):
