@@ -2,7 +2,7 @@
 """A simple flask app"""
 
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, g
 from flask_babel import Babel
 
 
@@ -63,7 +63,7 @@ def get_locale():
 @app.route('/')
 def hello_world():
     """default route"""
-    return render_template('5-index.html')
+    return render_template('6-index.html')
 
 
 if __name__ == '__main__':
