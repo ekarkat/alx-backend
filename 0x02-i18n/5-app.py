@@ -63,8 +63,8 @@ def get_locale():
 @app.route('/')
 def hello_world():
     """default route"""
-    return render_template('6-index.html')
+    return render_template('5-index.html')
 
 
 if __name__ == '__main__':
-    app.run(port="5000", host="0.0.0.0", debug=True)
+    app.run(port="5000", host="0.0.0.0")
