@@ -38,7 +38,9 @@ babel = Babel(app)
 
 def get_user():
     user_id = request.args.get('login_as')
-    return users.get(int(user_id))
+    if user_id:
+        return users.get(int(user_id))
+    return None
 
 
 @app.before_request
