@@ -60,7 +60,6 @@ def get_locale():
 @app.route('/')
 def hello_world():
     """default route"""
-    get_user()
     return render_template('5-index.html')
 
 
